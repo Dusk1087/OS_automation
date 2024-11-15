@@ -2,12 +2,13 @@ import os
 import shutil
 from datetime import datetime
 
+# Location for the log file
 log_file = r"C:\Users\reedf\OneDrive - stagrockllc.com\09. Software\Python\New_folder\log.txt"
-
+# function that "a" appends the log with the current date, time and message
 def log(message):
     with open(log_file, "a") as log:
         log.write(f"{datetime.now()}: {message}\n")
-
+# runs teh function log with the message "Script started"
 log("Script started")
 
 
